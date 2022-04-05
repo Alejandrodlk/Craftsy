@@ -1,11 +1,4 @@
 
-@font-face {
-    src: url("/fonts/CRENZO.ttf") format("truetype");
-    font-family: "Crenzo";
-    font-style: "normal";
-    font-weight: "normal"
-}
-
 @import "./normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 @import "./variables.css";
@@ -16,4 +9,5 @@
 @import "./login.css";
 @import "./productDetail.css";
 @import "./productCart.css";
+
 
