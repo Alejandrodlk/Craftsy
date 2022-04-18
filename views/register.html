@@ -8,7 +8,7 @@
     <title>Craftsy | Register</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
-<body>
+<body class="register">
     <header>
         <a href="/"> <img class="header__logo" src="/images/logo.png" alt=""></a>
         <nav class="header__menu">
@@ -26,76 +26,88 @@
     </header>
     <main>
         <section>
-            <h1>Bienvenido</h1>
+            <h1>Registrate</h1>
+            <hr>
             <form action=""></form>
-                <div class="form-box">
+            <article>
+                <div class="register__form-box">
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Escribi tu nombre"> <!-- id: al pararme sobre nombre se sombrea el imput -->
-                    <span>Obligatorio</span>
+                    <input class="register__form-input"  type="text" id="nombre" name="nombre" placeholder="Escribi tu nombre"> <!-- id: al pararme sobre nombre se sombrea el imput -->
+                    <span class="register__text-error">Obligatorio</span>
                 </div>
-                <div class="form-box">
+                <div class="register__form-box">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Escribi tu email">
-                    <span>Obligatorio</span>
-                <div class="form-box">
-                    <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" placeholder="Escribi tu contraseña">
-                    <span>Obligatorio</span> 
+                    <input class="register__form-input"  type="email" id="email" name="email" placeholder="Escribi tu email">
+                    <span class="register__text-error">Obligatorio</span>
                 </div>
-                <div>
-                    <h4>Pais de nacimiento</h4>
-                <div class="form-box">
-                    <select name="pais" id="pais">
+                <div class="register__form-box">
+                    <label for="password">Contraseña</label>
+                    <input class="register__form-input"  type="password" id="password" name="password" placeholder="Escribi tu contraseña">
+                    <span class="register__text-error">Obligatorio</span> 
+                </div>
+                <div class="register__form-box">
+                    
+                 
+                    <label for="pais">Pais de nacimiento</label>
+                    <select class="register__form-select" name="pais" id="pais">
                         <option value="" hidden selected>Por favor eleji uno...</option> <!-- hidden selected: para que no sea una opcion "por favor elige uno" -->
                         <option value="ar">Argentina</option>
                         <option value="br">Brasil</option>
                         <option value="uy">Uruguay</option>
                     </select>
-                    <span>Obligatorio</span>
+                    <span class="register__text-error">Obligatorio</span>
+                
                 </div>
-                </div>
-                <div>
+
+                <div class="register__form-box">
                     <h4>Genero</h4>
-                <div>
-                    <input type="radio" name="genero" id="masculino" value="m">
+                <div class="register__radio-box">
+                    <input  type="radio" name="genero" id="masculino" value="m">
                     <label for="masculino">Masculino</label>
                 </div>
-                <div>
-                    <input type="radio" name="genero" id="femenino" value="f">
+                <div class="register__radio-box">
+                    <input  type="radio" name="genero" id="femenino" value="f">
                     <label for="femenino">Femenino</label>
                 </div>
-                <div>
-                    <input type="radio" name="genero" id="nodice" value="n">
+                <div class="register__radio-box">
+                    <input  type="radio" name="genero" id="nodice" value="n">
                     <label for="nodice">Prefiero no decir</label>
                 </div>
                 </div>
-                <div>
+
+                <div class="register__form-box">
                     <h4>Hobies</h4>
-                <div>
-                    <input type="checkbox" name="hobbies" id="guitarra" value="g">
+                <div class="register__radio-box">
+                    <input  type="checkbox" name="hobbies" id="guitarra" value="g">
                     <label for="guitarra">Guitarra</label>
                 </div>
-                <div>
-                    <input type="checkbox" name="hobbies" id="futbol" value="f">
+                <div class="register__radio-box">
+                    <input  type="checkbox" name="hobbies" id="futbol" value="f">
                     <label for="futbol">Futbol</label>
                 </div>
-                <div>
-                    <input type="checkbox" name="hobbies" id="tenis" value="t">
+                <div class="register__radio-box">
+                    <input  type="checkbox" name="hobbies" id="tenis" value="t">
                     <label for="tenis">Tenis</label>
                 </div>
-                <div>
-                    <input type="checkbox" name="hobbies" id="programacion" value="p">
+                <div class="register__radio-box">
+                    <input  type="checkbox" name="hobbies" id="programacion" value="p">
                     <label for="programacion">Programacion</label>
                 </div>
                 </div>
-                <div>
+            </article>
+                <div class="register__form-box">
                     <h4>Dejanos tu comentario</h4>
-                    <textarea name="comentarios" id="comentarios" cols="30" rows="10" style="resize: none;"></textarea>
+                    <textarea class="register__form-input" name="comentarios" id="comentarios"  rows="10" style="resize: none;"></textarea>
                 </div>
-                <input type="checkbox" name="terminos" id="terminos" >
+                <div class="register__form-box register__center">                    <input class="" type="checkbox" name="terminos" id="terminos" >
                     <label for="terminos">Terminos y condiciones</label>
-                    <button type="submit">registrarme</button>
-                    <button type="button">Cancelar</button>
+                </div>
+
+                <div class="register__form-box register__center">
+                    <button type="submit">Registrarme</button>
+                    <a href="/"><button type="button">Cancelar</button></a>
+                    
+                </div>
         </section>
     </main>
 </body>

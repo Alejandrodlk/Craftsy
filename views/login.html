@@ -8,7 +8,7 @@
     <title>Craftsy | Login</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
-<body>
+<body class="login">
     <header>
         <a href="/"> <img class="header__logo" src="/images/logo.png" alt=""></a>
         <nav class="header__menu">
@@ -18,12 +18,39 @@
                 <li><a href="">Computadoras</a></li>
             </ul>
             <ul class="header__menu__usuarios">
-                <li><a href="/register">Registro</a></li>
+                <li><a href="/login">Registro</a></li>
                 <li><a href="/login">Login</a></li>
             </ul>
 
         </nav>
     </header>
-    <h1>Login</h1>
+    <main >
+        <section>
+            <h1>Ingresar</h1>
+            <hr>
+            <form action="">
+                
+                <div class="login__form-box">
+                    <label for="email">Email</label>
+                    <input class="login__form-input"  type="email" id="email" name="email" placeholder="Escribi tu email">
+                    <span class="login__text-error">Obligatorio</span>
+                </div>
+
+                <div class="login__form-box">
+                    <label for="password">Contraseña</label>
+                    <input class="login__form-input"  type="password" id="password" name="password" placeholder="Escribi tu contraseña">
+                    <span class="login__text-error">Obligatorio</span> 
+                </div>
+            
+                <div class="login__form-box login__center">
+                    <input class="" type="checkbox" name="recordame" id="recordame" >
+                    <label for="recordame">Recordame</label>
+                </div>
+
+                <div class="login__form-box login__center">
+                    <button type="submit">Ingresar</button>    
+                </div>
+            </form>
+    </main>
 </body>
 </html>
