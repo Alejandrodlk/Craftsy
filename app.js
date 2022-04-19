@@ -4,8 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+const indexRouter = require('./routes/index');
+const usersRouter = require('./routes/users');
+const productsRouter = require('./routes/products');
+
 const { sendFile } = require('express/lib/response');
 
 var app = express();
@@ -21,13 +23,15 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-/* app.use('/', indexRouter);
-app.use('/users', usersRouter); */
-app.get("/" , (req,res) => res.sendFile(path.resolve(__dirname, "views" , "index.html")))
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+app.use("/products", productsRouter);
+
+/* app.get("/" , (req,res) => res.sendFile(path.resolve(__dirname, "views" , "index.html")))
 app.get("/productCart" , (req,res) => res.sendFile(path.resolve(__dirname, "views" , "productCart.html")))
 app.get("/productDetail" , (req,res) => res.sendFile(path.resolve(__dirname, "views" , "productDetail.html")))
 app.get("/login" , (req,res) => res.sendFile(path.resolve(__dirname, "views" , "login.html")))
-app.get("/register" , (req,res) => res.sendFile(path.resolve(__dirname, "views" , "register.html")))
+app.get("/register" , (req,res) => res.sendFile(path.resolve(__dirname, "views" , "register.html"))) */
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftsy | Home</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body class="index">
+    <header>
+        <a href="/"> <img class="header__logo" src="/images/logo.png" alt=""></a>
+        <nav class="header__menu">
+            <ul class="header__menu__sitio">
+                <li><a href="">Smartphone</a></li>
+                <li><a href="">TabletS</a></li>
+                <li><a href="">Computadoras</a></li>
+            </ul>
+            <ul class="header__menu__usuarios">
+                <li><a href="/users/register">Registro</a></li>
+                <li><a href="/users/login">Login</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section class="index__products">
+            <article class="index__products__product">
+                <div>
+                    <a href=""><img src="/images/img-phone-01.jpg" alt=""></a>
+                </div>
+                <h4>Nombre de producto</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates omnis quae dolore ut ab qui.</p>
+                <a href="" class="index__products__product__more">VER MAS</a>
+            </article>
+            <article class="index__products__product">
+                <div>
+                    <a href=""><img src="/images/img-phone-02.jpg" alt=""></a>
+                </div>
+                <h4>Nombre de producto</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates omnis quae dolore ut ab qui.</p>
+                <a href="" class="index__products__product__more">VER MAS</a>
+            </article>
+            <article class="index__products__product">
+                <div>
+                   <a href=""><img src="/images/img-phone-03.jpg" alt=""></a> 
+                </div>
+                <h4>Nombre de producto</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates omnis quae dolore ut ab qui.</p>
+                <a href="" class="index__products__product__more">VER MAS</a>
+            </article>
+            <article class="index__products__product">
+                <div>
+                    <a href=""><img src="/images/img-phone-01.jpg" alt=""></a>
+                </div>
+                <h4>Nombre de producto</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates omnis quae dolore ut ab qui.</p>
+                <a href="" class="index__products__product__more">VER MAS</a>
+            </article>
+            <article class="index__products__product">
+                <div>
+                    <a href=""><img src="/images/img-phone-02.jpg" alt=""></a>
+                </div>
+                <h4>Nombre de producto</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates omnis quae dolore ut ab qui.</p>
+                <a href="" class="index__products__product__more">VER MAS</a>
+            </article>
+            <article class="index__products__product">
+                <div>
+                    <a href=""><img src="/images/img-phone-03.jpg" alt=""></a>
+                </div>
+                <h4>Nombre de producto</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates omnis quae dolore ut ab qui.</p>
+                <a href="" class="index__products__product__more">VER MAS</a>
+            </article>
+        </section>
+        <aside>
+              <section class="index__tutorials">
+                <h3>Tutoriales</h3>
+                <article class="index__tutorials__tutorial">
+                    <img src="/images/aside-02.jpg" alt="imagen">
+                    <p>Titulo del tutorial de reparacion</p>
+                </article>
+                <article class="index__tutorials__tutorial">
+                    <img src="/images/aside-02.jpg" alt="imagen">
+                    <p>Titulo del tutorial de reparacion</p>
+                </article>
+                <article class="index__tutorials__tutorial">
+                    <img src="/images/aside-03.jpg" alt="imagen">
+                    <p>Titulo del tutorial de reparacion</p>
+                </article>
+              </section>
+              <section class="index__advertising">
+                <h3>Publicidad</h3>
+                <article class="index__advertising__add">
+                    <img src="/images/ad-01 (1).jpg" alt="">
+                    <img src="/images/ad-02 (1).jpg" alt="">
+                </article>
+              </section>
+        </aside>
+    </main>
+</body>
 </html>
