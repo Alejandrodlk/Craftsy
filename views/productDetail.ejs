@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include("./partials/head" , {
-    title : "detalle de producto"
-}) %> 
+<%- include("./partials/head" , { title : "detalle de producto" }) %>
 
-<body>
-    
-    <%- include("./partials/header") %>
+<body class="detail">
 
-    <main class="container">
-        <!-- centrar el contenido -->
+<%- include("./partials/header") %>
+
+    <main class="container mt-4">
         <section class="row">
             <!-- flexbox -->
-            <article class="col-12 col-md-8 col-lg-10 mx-auto mt-5" > <!-- mx-auto centrar contenido -->
-                <div class="card shadow">
-                    <div class="card-header">
-                        <p>Detalle de producto</p>
-                    </div>
-                    <div class="card-body ">
-                        <div class="row">
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <img class="img-fluid" src="/images/img-phone-01.jpg" alt="">
+            <article class="col-12 col-md-10 col-lg-8 mx-auto mt-5">
+                <!-- mx-auto centrar contenido -->
+                <div class="card">
+                    <div class="row">
+                        <div class="col-12 col-md-5 col-lg-5">
+                            <div class="card-body">
+                                <img src="/images/img-phone-0<%= numberImage %>.jpg" class="img-fluid" alt="...">
+                                <div class="d-flex mt-1">
+                                    <img style="width: 33.3%;" src="/images/img-phone-01.jpg" alt="...">
+                                    <img style="width: 33.3%;" src="/images/img-phone-02.jpg" alt="...">
+                                    <img style="width: 33.3%;" src="/images/img-phone-03.jpg" alt="...">
+                                </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-8">
-                                <h3>Detalle del producto</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, cupiditate!</p>
+                        </div>
+                        <div class="col12 col-md-7 col-lg-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del producto</h5>
+                                <p class="card-text">Some quick example text to build on the card title and
+                                    make
+                                    up the bulk of the card's content.</p>
+                                <h6>Caracteristicas</h6>
+                                <hr>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                </ul>
+                            </div>
+                            <div
+                                class="card-body d-flex flex-column flex-md-row align-items-md-center justify-content-end">
+                                <a href="#" class="btn btn-outline-dark m-1"> Mas info</a>
+                                <a href="#" class="btn btn-outline-primary m-1">Agregar a carrito</a>
                             </div>
                         </div>
                     </div>
-                    <div class="card-footer">
-                        <p class="text-end">50 me gusta!</p>
-                    </div>
+
+
                 </div>
             </article>
         </section>
