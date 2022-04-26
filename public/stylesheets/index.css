@@ -1,9 +1,10 @@
-/* carrousel */
-    .carousel {
-        display: none;
-    }
 
-/* seccion productos */
+/* banner */
+.index__banner {
+    display: none;
+}
+
+    /* seccion productos */
 .index__products {
     background-color: white;
     display: flex;
@@ -130,6 +131,17 @@
     .index {
         max-width: 1140px;
         margin: 0 auto;;
+    }
+
+    /* banner */
+    .index__banner {
+        display: block;
+    }
+
+    .index__carrousel-item {
+        background-size: 100%;
+        height: 52vh;
+        width: 100%;
     }
 
     .index main {
