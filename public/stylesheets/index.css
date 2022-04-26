@@ -1,3 +1,7 @@
+/* carrousel */
+    .carousel {
+        display: none;
+    }
 
 /* seccion productos */
 .index__products {
@@ -91,6 +95,15 @@
 /* tablet */
 
 @media (min-width: 769px) {
+
+    .index main {
+        padding: 0 50px;
+    }
+
+    /* carrousel */
+    .carousel {
+        display: block;
+    }
 
     /* seccion productos */
     .index__products {
